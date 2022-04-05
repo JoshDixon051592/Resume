@@ -14,7 +14,7 @@
 <body>
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'bio')">Biography</button>
-        <button class="tablinks" onclick="openTab(event, 'map')">Map</button>
+        <button class="tablinks" onclick="openTab(event, 'mapMaster')">Map</button>
         <button class="tablinks" onclick="openTab(event, 'sound_board')">Sound Board</button>
     </div>
     <div id="bio" class="tabcontent">
@@ -22,17 +22,22 @@
         <p>todo: Insert my resume</p>
     </div>
       
-    <div id="map" class="tabcontent">
-        <h3>Map</h3>
-        <p>todo: insert google map and option to drop pin</p>
+    <div id="mapMaster" class="tabcontent">
+        <div id="map"></div>
     </div>
       
     <div id="sound_board" class="tabcontent">
-        <button id="button1" onclick="foo()">
+        <button onclick="playAudio('crazy_pills.mp3')">
             Crazy pills!
         </button>
+        <button onclick="playAudio('annoying.mp3')">
+            So annoying.
+        </button>
     </div>
-
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSmNTLrRIOy1xp01AILkijed-VE9xW6b4&callback=initMap&v=weekly"
+        async
+  ></script>
 </body>
  
 </html>

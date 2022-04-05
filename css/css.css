@@ -24,3 +24,7 @@
     border: 1px solid #ccc;
     border-top: none;
   }
+  #map{
+    height:500px;
+    width:100%;
+  }
