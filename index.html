@@ -10,14 +10,27 @@
 </head>
  
 <body>
-    <div>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'bio')">Biography</button>
+        <button class="tablinks" onclick="openTab(event, 'map')">Map</button>
+        <button class="tablinks" onclick="openTab(event, 'sound_board')">Sound Board</button>
+    </div>
+    <div id="bio" class="tabcontent">
+        <h3>My Bio</h3>
+        <p>todo: Insert my resume</p>
+    </div>
+      
+    <div id="map" class="tabcontent">
+        <h3>Map</h3>
+        <p>todo: insert google map and option to drop pin</p>
+    </div>
+      
+    <div id="sound_board" class="tabcontent">
         <button id="button1" onclick="foo()">
             Crazy pills!
         </button>
-        <button>
-
-        </button>
     </div>
+
 </body>
  
 </html>
